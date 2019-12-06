@@ -3,7 +3,7 @@
 # =======================
 FROM node:10.14.0-alpine AS NODE_MODULES
 
-WORKDIR /usr/src/plark-website
+WORKDIR /usr/src/jojum-website
 COPY package.json yarn.lock ./
 
 RUN yarn install && \

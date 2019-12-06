@@ -63,7 +63,7 @@ export default function Home(): JSX.Element {
                     </textarea>
                     </div>
                 ) : undefined}
-                
+
                 <div>
                     {value.length ? (
                         <QRCode value={value.replace(/\s/g, ' ').trim()}
