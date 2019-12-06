@@ -1,0 +1,3 @@
+[submodule "plark-faq"]
+	path = plark-faq
+	url = https://github.com/plark-app/plark-faq.git

@@ -1,0 +1,41 @@
+@import "../../styles/media";
+@import "../../styles/colors";
+
+.subcopy-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include from-lg-width {
+        flex-direction: row;
+    }
+}
+
+.subcopy {
+    width: 260px;
+
+    font-size: 20px;
+    letter-spacing: 0.43px;
+    line-height: 1.31;
+
+    @include to-lg-width {
+        margin: 20px 0;
+    }
+
+    &__title,
+    &__content {
+        font-size: inherit;
+        display: inline;
+    }
+
+    &__title {
+        font-weight: bold;
+        color: $color-text-dark;
+    }
+
+    &__content {
+        font-weight: normal;
+        color: $color-gray50;
+    }
+}

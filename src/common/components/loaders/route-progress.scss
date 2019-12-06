@@ -1,0 +1,33 @@
+@import '../../styles/vars';
+@import '../../styles/colors';
+
+.route-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $color-primary;
+    z-index: 9500;
+    transition: width $dur * 2 ease-out,
+        opacity $dur ease-in-out;
+}
+
+:global {
+    .route-progress-enter {
+        opacity: 0.01;
+    }
+
+    .route-progress-enter-active {
+        opacity: 1;
+    }
+
+    .route-progress-exit {
+        opacity: 1;
+    }
+
+    .route-progress-exit-active {
+        opacity: 0;
+        transition-duration: $dur * 2, $dur * 2;
+    }
+}

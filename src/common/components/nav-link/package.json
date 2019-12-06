@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "nav-link",
+    "main": "nav-link.tsx",
+    "typings": "nav-link.tsx"
+}

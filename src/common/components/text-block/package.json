@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "text-block",
+    "main": "text-block.tsx",
+    "typings": "text-block.tsx"
+}

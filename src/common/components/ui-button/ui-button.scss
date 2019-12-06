@@ -1,0 +1,112 @@
+@import '../../styles/vars';
+@import '../../styles/colors';
+
+@mixin contained-button-state($hover-color, $focus-color: $color-primary) {
+    &:hover:not(:focus):not(:disabled) {
+        box-shadow: 0 8px 16px rgba($hover-color, 0.05);
+    }
+
+    &:focus {
+        box-shadow: 0 8px 16px rgba($hover-color, 0.05), 0 0 0 3px rgba($focus-color, 0.5);
+    }
+}
+
+@mixin outlined-button-state($hover-color, $focus-color: $color-primary) {
+    &:hover:not(:focus):not(:disabled) {
+        background: $hover-color;
+        color: #fff;
+        box-shadow: 0 8px 16px rgba($hover-color, 0.05);
+    }
+
+    &:focus {
+        background: $hover-color;
+        color: #fff;
+        box-shadow: 0 8px 16px rgba($hover-color, 0.05), 0 0 0 3px rgba($focus-color, 0.5);
+    }
+}
+
+
+.ui-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 60px;
+    min-width: 100px;
+
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    user-select: none;
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: $color-dark;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0);
+
+    transform: translateY(0);
+    backface-visibility: hidden;
+    will-change: transform, background-color, color, border-color, box-shadow;
+    transition: transform ease-in-out $dur,
+        background-color ease-in-out $dur,
+        color ease-in-out $dur,
+        border-color ease-in-out $dur,
+        box-shadow ease-in-out $dur;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-3px);
+        transition-duration: $dur-fast, $dur-fast, $dur-fast, $dur-fast, $dur-fast;
+    }
+
+    &.is-small {
+        height: 46px;
+
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &[disabled] {
+        cursor: default;
+        background-color: #dfe3f2 !important;
+        border-color: #dfe3f2 !important;
+        color: white !important;
+
+        &:hover,
+        &:focus {
+            transform: translateY(0) !important;
+        }
+    }
+
+    &.i-contained.i-default {
+        @include contained-button-state(#fff, $color-primary);
+        background-color: white;
+        border-color: white;
+        color: $color-dark;
+    }
+
+    &.i-contained.i-primary {
+        @include contained-button-state($color-primary, $color-primary);
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: white;
+    }
+
+    &.i-outlined.i-default {
+        @include contained-button-state(#fff, $color-dark);
+        background-color: transparent;
+        border-color: white;
+        color: white;
+    }
+
+    &.i-outlined.i-primary {
+        @include outlined-button-state($color-primary, $color-primary);
+        background-color: transparent;
+        border-color: $color-primary;
+        color: $color-primary;
+    }
+}

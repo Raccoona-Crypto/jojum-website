@@ -1,0 +1,6 @@
+app:
+  host: jojum.com
+  port: 80
+  secure: true
+
+  gtmKey: false

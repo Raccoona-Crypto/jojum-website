@@ -1,0 +1,23 @@
+.git*
+node_modules
+.DS_Store
+.idea
+
+dest/
+tests/
+utils/
+.cache-loader/
+
+*.log
+Dockerfile
+.dockerignore
+
+# readme.md
+collect-translations.sh
+jest.config.js
+.eslintignore
+.eslintrc
+.prettierignore
+.prettierrc
+.stylelintrc
+.vscode

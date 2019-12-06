@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "two-iphones",
+    "main": "two-iphones.tsx",
+    "typings": "two-iphones.tsx"
+}

@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "subcopy",
+    "main": "subcopy",
+    "typings": "subcopy.tsx"
+}

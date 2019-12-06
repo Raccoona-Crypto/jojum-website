@@ -1,0 +1,6 @@
+{
+    "name": "window-size-helper",
+    "private": true,
+    "main": "window-size-helper.ts",
+    "typing": "window-size-helper.ts"
+}

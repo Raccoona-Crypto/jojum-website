@@ -1,0 +1,5 @@
+{
+    "name": "i18n",
+    "main": "i18n.ts",
+    "types": "i18n.ts"
+}

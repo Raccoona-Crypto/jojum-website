@@ -1,0 +1,29 @@
+@import "../../styles/colors";
+@import "../../styles/media";
+
+.link {
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 1.46;
+    font-weight: bold;
+    color: $color-text-secondary;
+
+    transition: color 0.4s;
+    &:hover {
+        transition-duration: 0.2s;
+        color: $color-text-dark;
+    }
+
+    &__arrow {
+        transition: transform 0.4s;
+
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    &:hover &__arrow {
+        transition-duration: 0.2s;
+        transform: translateX(5px);
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "markdown-content",
+    "main": "markdown-content.tsx",
+    "typings": "markdown-content.tsx"
+}

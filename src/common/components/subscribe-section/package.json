@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "subscribe-section",
+    "main": "subscribe-section.tsx",
+    "typings": "subscribe-section.tsx"
+}

@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "loaders",
+    "main": "loaders.ts",
+    "typings": "loaders.ts"
+}

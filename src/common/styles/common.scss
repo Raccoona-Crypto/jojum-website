@@ -1,0 +1,16 @@
+.legal-section {
+
+}
+
+
+.markdown {
+    margin-top: 40px;
+
+    &__main-title {
+        margin-top: 80px !important;
+    }
+
+    p + h2 {
+        margin-top: 50px;
+    }
+}

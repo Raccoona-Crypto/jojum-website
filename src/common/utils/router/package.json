@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "router",
+    "main": "router.ts",
+    "typings": "router.ts"
+}

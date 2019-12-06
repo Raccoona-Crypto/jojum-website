@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "ui-button",
+    "main": "ui-button.tsx",
+    "typings": "ui-button.tsx"
+}

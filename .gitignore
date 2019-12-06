@@ -1,0 +1,33 @@
+.idea
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+.env
+.env.yml
+node_modules
+package-lock.json
+yarn-error.log
+dist
+dest
+lib
+.cache-loader
+.vscode
+storybook-static
+build
+
+resources/locales/*
+src/common/pages/faq/faq-content/*

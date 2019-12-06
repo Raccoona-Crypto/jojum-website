@@ -1,0 +1,72 @@
+@import '../../styles/colors';
+@import '../../styles/vars';
+@import '../../styles/media';
+
+.subscribe {
+
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 130px;
+
+        @include from-width(640px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__form-container {
+        margin: 50px auto 0 auto;
+        width: 100%;
+        max-width: 590px;
+    }
+
+    &__input {
+        height: 60px;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-text-dark;
+        border-radius: 5px;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid $color-gray20;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: $color-gray10;
+        }
+
+        @include from-width(640px) {
+            width: calc(100% - 190px);
+        }
+    }
+
+    &__button {
+        width: 100%;
+
+        @include from-width(640px) {
+            width: 180px;
+        }
+    }
+
+    &__error-message {
+        margin-top: 10px;
+        color: $color-danger;
+        font-size: 12px;
+        height: 14px;
+    }
+
+    &__success {
+        font-size: 16px;
+        text-align: center;
+    }
+}

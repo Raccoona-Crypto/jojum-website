@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "seo",
+    "main": "index.ts",
+    "typings": "index.ts"
+}

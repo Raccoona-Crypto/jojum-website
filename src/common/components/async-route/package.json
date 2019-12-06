@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "name": "async-route",
+    "main": "async-route.tsx",
+    "typings": "async-route.tsx"
+}
